@@ -44,8 +44,11 @@ const StopWatch = () => {
     }}>
           <h4>Stopwatch</h4>
           <h4>{formatTime(time)}</h4>
-          <button onClick={handleStart}>{isTimerOn ? 'Stop' : 'Start'}</button>
-          <button onClick={handleReset}>Reset</button>
+          <div>
+            <button onClick={handleStart}>{isTimerOn ? 'Stop' : 'Start'}</button>
+            <button onClick={handleReset}>Reset</button>
+          </div>
+          
        
         
     </div>
