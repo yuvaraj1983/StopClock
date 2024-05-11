@@ -42,12 +42,11 @@ const StopWatch = () => {
         alignItems:'center'
       
     }}>
-          <h4>Stop Watch</h4>
+          <h4>Stopwatch</h4>
           <h4>{formatTime(time)}</h4>
-          <div>
-              <button onClick={handleStart}>{isTimerOn ? 'Stop' : 'Start'}</button>
-              <button onClick={handleReset}>Reset</button>
-          </div>
+          <button onClick={handleStart}>{isTimerOn ? 'Stop' : 'Start'}</button>
+          <button onClick={handleReset}>Reset</button>
+       
         
     </div>
   
